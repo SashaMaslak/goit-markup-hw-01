@@ -1,0 +1,147 @@
+/* цвет основного фона #FFFFFF */
+/* цвет фона Hero и Футера: #2F303A */
+/* цвет дополнительного фона #F5F4FA */
+/* цвет текста заголовков #212121 */
+/* цвет основного текста #757575 */
+/* акцент #18A0FB */
+/* цвет текста белый #FFFFFF */
+
+
+:root {
+    --primary-bg-color: #FFFFFF;
+    --hero-bg-color: #2F303A;
+    --add-bg-color: #F5F4FA;
+    --title-color: #212121;
+    --text-color: #757575;
+    --accent-color: #18A0FB;
+    --text-white: #FFFFFF;
+    --text-black: #000000;
+}
+
+body {
+  background-color: var(--primary-bg-color);
+  font-family: Roboto, sans-serif;
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+li {
+  list-style-type: none
+}
+
+ul {
+  padding-left: 0;
+}
+
+/* Оформление шапки */
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  text-decoration: none;
+}
+
+.logo-begin {
+  color: var(--accent-color);
+}
+
+.logo-end {
+  color: var(--text-black);
+}
+
+nav>.menu {
+  color: var(--title-color);
+}
+
+.menu {
+  color: var(--text-color);
+}
+
+.menu:hover, .menu:focus {
+  color: var(--accent-color);
+}
+
+/* Оформление Hero */
+
+.hero {
+  background-color: var(--hero-bg-color);
+}
+
+.hero-title {
+  color: var(--text-white);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  background-color: var(--accent-color);
+  color: var(--text-white);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* Оформление Skills */
+
+.skills h3 {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.skills > p {
+  font-size: 14px;
+  line-height: 1.71;
+}
+
+/* Оформление Works+Team */
+
+.works h2, .team h2 {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+.team > h3 {
+  color: var(--title-color);
+  font-weight: 500;
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.team > p {
+  text-align: center;
+}
+
+/* Оформление address */
+
+footer {
+  background-color: var(--hero-bg-color);
+}
+
+.address > p {
+  font-size: 14px;
+  line-height: 1.71;
+  font-style: inherit;
+}
+
+.address-city {
+  color: var(--text-white);
+}
+
+.address-text {
+  color: rgba(255, 255, 255, 0.6);
+}
